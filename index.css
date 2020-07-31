@@ -1,4 +1,4 @@
-{
+* {
     margin: 0;
     padding: 0;
 }
@@ -42,27 +42,26 @@
 }
 
 .main-area {
-    text-align: center;
-    padding: 204px 0px 0px;
-    height: 754px;
-    line-height: 25.6px;
+    height: 700px;
     background-color: rgb(68, 179, 158);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .main-area-title {
-    display: inline-block;
+    margin-bottom: 24px;
     text-align: center;
-    line-height: 72px;
-    margin: 0 0 24px;
     font-size: 48px;
-    color: #fff;
 }
 
 .main-area-description {
-    font-size: 15px;
-    color: #fff;
-    width: 600px;
     margin: 0 auto;
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+    font-size: 14px;
 }
 
 .entries {
