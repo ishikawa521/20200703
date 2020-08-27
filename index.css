@@ -189,6 +189,7 @@
     font-size: 28px;
     top: 4000px;
     width: 93.4%;
+    z-index: 5;
 }
 
 .contents-title-c span {
@@ -220,7 +221,7 @@
     font-size: 28px;
     top: 4500px;
     width: 93.4%;
-    z-index: 2;
+    z-index: 5;
 }
 
 .contents-title-d span {
