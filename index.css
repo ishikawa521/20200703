@@ -91,6 +91,9 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    padding-bottom: 60px;
+    border-bottom: solid 1px;
+    border-bottom-color: #d6d6d6;
 }
 
 
@@ -108,8 +111,10 @@
     padding: 30px 0px;
     border-top: solid 1px;
     border-bottom: solid 1px;
+    border-color: #d6d6d6;
     margin: 50px 0px;
     font-size: 24px;
+    font-weight: normal;
 }
 
 .contents-title {
@@ -119,7 +124,12 @@
     color: #fff;
     text-align: center;
     font-size: 28px;
-    margin-top: 80px;
+    margin-top: 40px;
+}
+
+.contents-title span {
+    display: block;
+    font-size: 14px;
 }
 
 .contents-title:after {
@@ -135,6 +145,7 @@
     border-top: 30px solid #3B4552;
     border-left: 100px solid transparent;
     border-right: 100px solid transparent;
+    z-index: 3;
 }
 
 .contents-title-b {
@@ -146,6 +157,11 @@
     font-size: 28px;
     top: 3485px;
     width: 93.4%;
+}
+
+.contents-title-b span {
+    display: block;
+    font-size: 14px;
 }
 
 .contents-title-b:after {
@@ -161,6 +177,7 @@
     border-top: 30px solid #3B4552;
     border-left: 100px solid transparent;
     border-right: 100px solid transparent;
+    z-index: 5;
 }
 
 .contents-title-c {
@@ -172,6 +189,11 @@
     font-size: 28px;
     top: 4000px;
     width: 93.4%;
+}
+
+.contents-title-c span {
+    display: block;
+    font-size: 14px;
 }
 
 .contents-title-c:after {
@@ -201,6 +223,11 @@
     z-index: 2;
 }
 
+.contents-title-d span {
+    display: block;
+    font-size: 14px;
+}
+
 .contents-title-d:after {
     content: "";
     display: block;
@@ -214,36 +241,91 @@
     border-top: 30px solid #3B4552;
     border-left: 100px solid transparent;
     border-right: 100px solid transparent;
-    z-index: 2;
-}
-
-.contents-title-mini {
-    position: relative;
-    color: #fff;
-    text-align: center;
-    font-size: 13px;
-    margin: 0;
-}
-
-.contents-title-mini-b {
-    position: relative;
-    color: #fff;
-    text-align: center;
-    font-size: 13px;
-    margin: 0;
+    z-index: 5;
 }
 
 .contents {
     height: auto;
 }
 
-
 .feature {
-    background-color: #fff;
-    margin: 0 120px;
+    position: relative;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: solid 1px;
+    border-bottom-color: rgb(219, 219, 219);
 }
 
+.feature:nth-child(even) {
+    padding-right: 600px;
+}
 
+.feature:nth-child(odd) {
+    padding-left: 600px;
+}
+
+.feature-title {
+    padding-top: 16px;
+    margin-left: 120px;
+    font-size: 32px;
+    color: #47B39D;
+    font-weight: normal;
+}
+
+.feature-item {
+    margin-left: 120px;
+    padding-right: 100px;
+    margin-top: 36px;
+    margin-bottom: 36px;
+    color: rgb(71, 71, 71);
+}
+
+.feature-title span {
+    display: block;
+    font-size: 14px;
+}
+
+.feature-img {
+    position: absolute;
+    top: 0;
+}
+
+.feature:nth-child(even) .feature-img {
+    right: 0;
+}
+
+.feature:nth-child(odd) .feature-img {
+    left: 0;
+}
+
+.feature-img img {
+    height: 400px;
+}
+
+.btn-orange {
+    background-color: #ff6c00;
+    width: 18%;
+    padding: 12px;
+    font-size: 14px;
+    margin: 0 0 48px;
+    text-align: center;
+    border-radius: 3px;
+    margin-left: 120px;
+}
+
+.btn-orange a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*
+.feature {
+    background-color: #fff;
+    margin: 0 0px;
+    position: relative;
+}
 .feature-image-right-a img {
     position: absolute;
     right: 0px;
@@ -251,21 +333,18 @@
     width: 40%;
     height: auto;
 }
-
 .feature-tytle-right-a {
     color: #47B39D;
     font-size: 36px;
     padding-top: 100px;
+    margin-left: 100px;
 }
-
-
 .feature-item-right-a {
     font-size: 16px;
     width: 50%;
     padding-top: 50px;
     margin-bottom: 50px;
 }
-
 .btn-orange-right-a {
     background-color: #ff6c00;
     width: 15%;
@@ -275,7 +354,6 @@
     text-align: center;
     border-radius: 3px;
 }
-
 .feature-image-left-a img {
     left: 0px;
     position: absolute;
@@ -284,8 +362,6 @@
     height: auto;
     top: 2240px;
 }
-
-
 .feature-tytle-left-a {
     color: #47B39D;
     position: absolute;
@@ -293,7 +369,6 @@
     padding-top: 100px;
     left: 700px;
 }
-
 .feature-item-left-a {
     font-size: 16px;
     width: 50%;
@@ -302,7 +377,6 @@
     position: absolute;
     left: 700px;
 }
-
 .btn-orange-left-a {
     background-color: #ff6c00;
     width: 15%;
@@ -315,7 +389,6 @@
     left: 700px;
     top: 2530px;
 }
-
 .feature-image-right-b img {
     position: absolute;
     right: 0px;
@@ -324,7 +397,6 @@
     height: auto;
     top: 2660px;
 }
-
 .feature-tytle-right-b {
     color: #47B39D;
     font-size: 36px;
@@ -332,8 +404,6 @@
     position: absolute;
     top: 2650px;
 }
-
-
 .feature-item-right-b {
     font-size: 16px;
     width: 50%;
@@ -342,7 +412,6 @@
     position: absolute;
     top: 2790px;
 }
-
 .btn-orange-right-b {
     background-color: #ff6c00;
     width: 15%;
@@ -354,7 +423,6 @@
     position: absolute;
     top: 2940px;
 }
-
 .feature-image-left-b img {
     left: 0px;
     position: absolute;
@@ -363,8 +431,6 @@
     height: auto;
     top: 3080px;
 }
-
-
 .feature-tytle-left-b {
     color: #47B39D;
     position: absolute;
@@ -373,7 +439,6 @@
     left: 700px;
     top: 3050px;
 }
-
 .feature-item-left-b {
     font-size: 16px;
     width: 50%;
@@ -383,7 +448,6 @@
     left: 700px;
     top: 3200px;
 }
-
 .btn-orange-left-b {
     background-color: #ff6c00;
     width: 15%;
@@ -396,31 +460,26 @@
     left: 700px;
     top: 3350px;
 }
-
 .btn-orange-right-a a {
     color: #fff;
     text-decoration: none;
 }
-
 .btn-orange-right-b a {
     color: #fff;
     text-decoration: none;
 }
-
 .btn-orange-left-a a {
     color: #fff;
     text-decoration: none;
 }
-
 .btn-orange-left-b a {
     color: #fff;
     text-decoration: none;
 }
-
 .feature-tytle-mini {
     font-size: 13px
 }
-
+*/
 .service {
     width: 50%;
     border-right: 1px solid #e5e5e5;
@@ -446,10 +505,11 @@
     text-align: center;
 }
 
-.service-title-mini-a {
+.service-title span {
     font-size: 13px;
     font-weight: normal;
     color: #41BAA4;
+    display: block;
 }
 
 .service-title-b {
@@ -460,10 +520,11 @@
     text-align: center;
 }
 
-.service-title-mini-b {
+.service-title-b span {
     font-size: 13px;
     font-weight: normal;
     color: #41BAA4;
+    display: block;
 }
 
 .service-item {
@@ -518,6 +579,7 @@
     text-align: left;
     padding: 20px;
     box-sizing: border-box;
+    color: rgb(49, 49, 49);
 }
 
 .table-description {
@@ -527,6 +589,7 @@
     text-align: left;
     padding: 20px;
     box-sizing: border-box;
+    color: rgb(49, 49, 49);
 }
 
 iframe {
@@ -651,4 +714,3 @@ iframe {
     color: #fff;
     font-size: 13px;
 }
-
