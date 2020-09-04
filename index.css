@@ -124,7 +124,6 @@
     color: #fff;
     text-align: center;
     font-size: 28px;
-    margin-top: 40px;
 }
 
 .contents-title span {
@@ -146,103 +145,6 @@
     border-left: 100px solid transparent;
     border-right: 100px solid transparent;
     z-index: 3;
-}
-
-.contents-title-b {
-    position: absolute;
-    padding: 50px;
-    background: #3B4552;
-    color: #fff;
-    text-align: center;
-    font-size: 28px;
-    top: 3485px;
-    width: 93.4%;
-}
-
-.contents-title-b span {
-    display: block;
-    font-size: 14px;
-}
-
-.contents-title-b:after {
-    content: "";
-    display: block;
-    width: 0px;
-    height: 0px;
-    position: absolute;
-    bottom: -15px;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    border-top: 30px solid #3B4552;
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;
-    z-index: 5;
-}
-
-.contents-title-c {
-    position: absolute;
-    padding: 50px;
-    background: #3B4552;
-    color: #fff;
-    text-align: center;
-    font-size: 28px;
-    top: 4000px;
-    width: 93.4%;
-    z-index: 5;
-}
-
-.contents-title-c span {
-    display: block;
-    font-size: 14px;
-}
-
-.contents-title-c:after {
-    content: "";
-    display: block;
-    width: 0px;
-    height: 0px;
-    position: absolute;
-    bottom: -15px;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    border-top: 30px solid #3B4552;
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;
-}
-
-.contents-title-d {
-    position: absolute;
-    padding: 50px;
-    background: #3B4552;
-    color: #fff;
-    text-align: center;
-    font-size: 28px;
-    top: 4500px;
-    width: 93.4%;
-    z-index: 5;
-}
-
-.contents-title-d span {
-    display: block;
-    font-size: 14px;
-}
-
-.contents-title-d:after {
-    content: "";
-    display: block;
-    width: 0px;
-    height: 0px;
-    position: absolute;
-    bottom: -15px;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    border-top: 30px solid #3B4552;
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;
-    z-index: 5;
 }
 
 .contents {
@@ -480,7 +382,7 @@
 .feature-tytle-mini {
     font-size: 13px
 }
-*/
+
 .service {
     width: 50%;
     border-right: 1px solid #e5e5e5;
@@ -714,4 +616,138 @@ iframe {
     padding: 25px 0px;
     color: #fff;
     font-size: 13px;
+}
+*/
+.service-container {
+    display: flex;
+}
+
+.service {
+    width: 50%;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.service:nth-child(1) {
+    border-right: 1px solid #cecece;
+}
+
+.service-title {
+    color: #47B39D;
+    margin-bottom: 24px;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.service-title span {
+    display: block;
+    font-size: 14px;
+}
+
+.service-item {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #47b39d;
+}
+
+.service-item a {
+    padding: 24px 16px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.service-item hover {
+    opacity: 0.7;
+}
+
+.contents .table {
+    margin: 24px;
+}
+
+.table {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ccc;
+}
+
+.table-title {
+    width: 20%;
+    box-sizing: border-box;
+    padding: 24px 16px;
+    border-top: 1px solid #ccc;
+}
+
+.table-title:first-child {
+    border-top: 2px solid #47b39d;
+}
+
+.table-description {
+    width: 80%;
+    box-sizing: border-box;
+    padding: 24px 16px;
+    border-top: 1px solid #ccc;
+}
+
+.inquiry {
+    background-color: #47b39d;
+}
+
+.inquiry .form {
+    padding: 40px 16px;
+    text-align: center;
+}
+
+.form {
+    border-bottom: 8px solid #3B4552;
+}
+
+.form-label {
+    margin-bottom: 4px;
+    color: #fff;
+}
+
+.form-value {
+    margin-bottom: 24px;
+}
+
+.form-value textarea,
+.form-value input {
+    padding: 8px;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-value textarea {
+    height: 200px;
+}
+
+.btn-black input,
+.btn-black a {
+    padding: 16px 80px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    background-color: #1D1F21;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.btn-black:hover {
+    opacity: 0.7;
+}
+
+#footer {
+    background-color: #031731;
+}
+
+.footer-title {
+    color: #fff;
+    font-weight: normal;
 }
