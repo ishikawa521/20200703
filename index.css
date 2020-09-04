@@ -725,6 +725,31 @@ iframe {
     opacity: 0.7;
 }
 
+@media screen and (max-width:990px) {
+    .service-container {
+        display: block;
+        margin: 0px;
+    }
+
+    .service {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .service:nth-child(1) {
+        border: none;
+    }
+
+    .service-title {
+        width: 100%;
+    }
+
+    .service-item a {
+        padding: 16px 80px;
+    }
+}
+
 .contents .table {
     margin: 24px;
 }
