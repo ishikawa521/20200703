@@ -892,3 +892,8 @@ iframe {
     text-align: center;
     padding: 24px 0;
 }
+
+@media screen and (max-width:800px) {
+    .footer-lists {
+        display: block;
+    }
